@@ -43,7 +43,7 @@ func CORSMiddleware() gin.HandlerFunc {
 
 func main() {
 	port := os.Getenv("PORT")
-	gin.SetMode(gin.ReleaseMode)
+	// gin.SetMode(gin.ReleaseMode)
 	r := gin.New()
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
